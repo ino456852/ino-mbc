@@ -1,5 +1,8 @@
 package day0422;
 
+import day0422.school.Member;
+import day0422.school.Student;
+
 public class EqualsExam {
 	
 	public static void main(String[] args) {

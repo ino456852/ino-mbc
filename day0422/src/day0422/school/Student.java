@@ -1,4 +1,4 @@
-package day0422;
+package day0422.school;
 
 import java.util.Objects;
 
@@ -55,7 +55,7 @@ public class Student extends Member {
 
 	@Override
 	public String toString() {
-		return ", jungonh=" + jungonh + ", haknyun=" + haknyun;
+		return super.toString() + ", jungonh=" + jungonh + ", haknyun=" + haknyun;
 	}
 
 }

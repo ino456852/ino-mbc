@@ -1,4 +1,4 @@
-package day0422;
+package day0422.school;
 
 import java.util.Objects;
 

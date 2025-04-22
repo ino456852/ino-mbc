@@ -1,12 +1,14 @@
 package day0422;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class LottoListExam {
 
 	public static void main(String[] args) {
-		List<Integer> lottoList = new ArrayList<Integer>();
+//		List<Integer> lottoList = new ArrayList<Integer>();
+		List<Integer> lottoList = new LinkedList<Integer>();
 		
 		for (int i = 0; i < 6; i++) {
 			int num = (int) (Math.random()*45) +1;
