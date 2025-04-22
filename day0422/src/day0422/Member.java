@@ -1,5 +1,6 @@
-package day04211;
+package day0422;
 
+import java.util.Objects;
 
 /** 학생,교수,직원의 공통 속성 */
 public class Member {
@@ -37,5 +38,23 @@ public class Member {
 	public String toString() {
 		return "id=" + id + ", name=" + name;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Member other = (Member) obj;
+		return Objects.equals(id, other.id) && Objects.equals(name, other.name);
+	}
+	
 
 }
